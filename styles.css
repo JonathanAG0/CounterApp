@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+:root {
+    --main-dark-blue: rgb(21, 34, 53);
+    --main-black: rgb(34, 34, 34);
+    --main-green: rgb(0, 128, 0);
+    --main-red: rgb(255, 0, 0);
+    --main-ff: 'Roboto', sans-serif;
+    --secondary-ff: 'Open Sans', sans-serif;    
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F1f5f8;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 17rem;
+    font-family: var(--main-ff);
+    color: var(--main-dark-blue);
+    font-size: 2rem;
+    letter-spacing: 0.25rem;
+}
+#counter {
+    font-family: var(--secondary-ff);
+    margin-top: -1.4rem;
+    color: var(--main-black);
+    font-weight: 800;
+    font-size: 6rem;
+}
+button {
+    font-family: var(--secondary-ff);
+    background-color: transparent;
+    border-color: var(--main-black);
+    width: auto;
+    padding: 0.4rem;
+    font-size: 0.90rem;
+    letter-spacing: 0.27rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+button:hover {
+    background-color: var(--main-black);
+    color: white;
+    transition: 0.5s;
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: -4rem;
+}
